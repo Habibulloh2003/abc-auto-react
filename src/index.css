@@ -1,13 +1,143 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import './style/fonts.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    font-family: 'Roboto';
+    background: #fff;
+}
+
+:root {
+    --gray-color: #EFF0F0;
+    --gray2-color: #737373;
+    --red-color: #CA0100;
+    --black-color: #262626;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+    padding: 0;
+}
+
+* ::before, ::after{
+    box-sizing: initial;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+@media (max-width:1348px) {
+    .header-nav__item1 {
+        font-size: 15px;
+        padding-left: 20px;
+    }
+
+    .header-nav2__list {
+        column-gap: 60px;
+    }
+
+    .header-nav2__list2 {
+        column-gap: 30px;
+    }
+
+    .header-nav__item2 {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .telephone-number1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:1280px) {
+    .header-nav__item1 {
+        display: none;
+    }
+}
+
+@media (max-width:1220px) {
+    .header-nav2__list {
+        column-gap: 40px;
+    }
+
+    .header-nav2__list2 {
+        column-gap: 20px;
+    }
+
+    .header-nav2__link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1160px) {
+    .header-nav__item2 {
+        animation: none;
+        margin-right: 0;
+    }
+}
+
+@media (max-width:1024px) {
+    .header-nav__list {
+        column-gap: 13px;
+    }
+
+    .header-nav__link {
+        font-size: 13px;
+    }
+
+    .header-nav__link-before {
+        font-size: 13px;
+    }
+
+    .telephone-number1 {
+        font-size: 18px;
+    }
+
+    .header-nav__item2 {
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+
+    .telephone-number2 {
+        display: none;
+    }
+
+    .header-nav2__link {
+        white-space: nowrap;
+        font-size: 13px;
+    }
+
+
 }

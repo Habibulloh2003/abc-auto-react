@@ -1,0 +1,122 @@
+.header-bottom {
+    margin: 0 25px 40px;
+    height: 600px;
+    background: #eff0f0;
+    border-radius: 25px;
+}
+
+.header-bottom .container {
+    display: flex;
+    height: 100%;
+}
+
+.header-bottom__left-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+.header-bottom__left-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-bottom__txt1 {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: var(--red-color);
+    width: max-content;
+    padding: 5px 12px;
+    border-radius: 33px;
+    margin-top: 80px;
+}
+
+.header-bottom__title {
+    font-size: 60px;
+    line-height: 70px;
+    color: var(--black-color);
+    margin-top: 35px;
+    margin-bottom: 24px;
+}
+
+.header-bottom__txt2 {
+    font-size: 29px;
+    line-height: 34px;
+    color: var(--gray2-color);
+}
+
+.wrapper__slider-indicators {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 88px;
+}
+
+.slider-indicator {
+    background: #737373;
+    opacity: 0.52;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+
+.slider-indicator.active {
+    background: #fff;
+    border: 3px var(--red-color) solid;
+}
+
+.header-bottom__slider {
+    position: absolute;
+    width: 1222px;
+    height: 598px;
+    top: 207px;
+    right: 26px;
+    overflow: hidden;
+    background-color: rgb(239, 240, 240);
+    background-blend-mode: multiply;
+    border-radius: 25px;
+}
+
+.slider-img{
+    position: absolute;
+    transition: 1s linear;
+    height: auto;
+}
+
+.slider-img.active{
+    bottom: 43px;
+    left: 103px;
+    width: 785px;
+    z-index: 3;
+}
+
+.slider-img.active2{
+    bottom: 133px;
+    left: 543px;
+    width: 507px;
+    z-index: 2;
+}
+
+.slider-img.active3{
+    bottom: 189px;
+    left: 737px;
+    width: 403px;
+    z-index: 1;
+}
+
+.wrapper-arrows{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 57px;
+    transform: translateY(-300px);
+}
+
+.wrapper-arrows i{
+    font-size: 40px;
+    color: #000;
+    cursor: pointer;
+}
